@@ -1,0 +1,12 @@
+.chatMessagesContainer::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.chatMessagesContainer {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+  }
+.ta::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.ta {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+  }
