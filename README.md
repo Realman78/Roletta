@@ -12,6 +12,8 @@ Roletta is a web app that makes interviews/meetings fast, accessible and easy fo
 
 - Shared Code editor with syntax highlight support for 11 languages and changeable font size
 
+- Ability to execute JS code in the editor in an isolated environment
+
 - Screen sharing
 
 - Realtime chat
