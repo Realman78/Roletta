@@ -1,0 +1,24 @@
+.code-textarea {
+    width: 99%;
+    height: 99%;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #00ff00; 
+    border-radius: 4px;
+    background-color: #000;
+    color: #00ff00;
+    overflow-y: auto;
+    tab-size: 4;
+    position: absolute;
+    resize: none;
+}
+.code-textarea::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.code-textarea {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+/* dodaj da se ne vidi scrollbar */
+.code-textarea:focus {
+    outline: none;
+    border-color: #66afe9;
+}

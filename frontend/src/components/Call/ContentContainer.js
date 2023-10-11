@@ -11,8 +11,9 @@ import { executeCode } from '../../api'
 const MainContainer = styled('div')({
     width: '100%',
     height: '75%',
-    overflowY: 'scroll',
-    position: 'relative'
+    // overflowY: 'scroll',
+    position: 'relative',
+    // justifyContent: 'normal'
 })
 
 
@@ -54,9 +55,9 @@ function ContentContainer({ chosenStream, roomDetails, setSharedNotepadContent, 
         return () => clearTimeout(delay)
     }, [roomId, sharedNotepadContent, doUpdate, setDoUpdate])
     return (
-        <MainContainer className='container'>
+        <MainContainer>
             {chosenStream ? <Video stream={chosenStream} isLocalStream={true} isChosen={true} autoPlay></Video> : <CodeEditor code={sharedNotepadContent || ''} changeHandler={textAreaChangeHandler} disabledEditor={codeRunning} />}
-            {!chosenStream && language === "js" && roomDetails?.sharedNotepadContent?.length > 0 && <button onClick={executeCodeInEditor} className='button-28' style={{ position: "sticky", bottom: "10px", right: "10px", height: "min-content" }} disabled={codeRunning}>{codeRunning ? "Executing..." : "Execute"}</button>}
+            {!chosenStream && roomDetails?.sharedNotepadContent?.length > 0 && <button onClick={executeCodeInEditor} className='button-28' style={{ position: "absolute", bottom: "10px", right: "10px", height: "min-content" }} disabled={codeRunning}>{codeRunning ? "Executing..." : "Execute"}</button>}
         </MainContainer>
     )
 }
