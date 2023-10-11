@@ -23,6 +23,9 @@ app.get('/api/connection', (req,res) => {
 const roomRouter = require('./routes/roomRouter')
 app.use('/api/room', roomRouter)
 
+const executionRouter = require('./routes/executionRouter')
+app.use('/api/execution', executionRouter)
+
 connectDB().then(() => {
     server.listen(PORT, () => {
         console.log(`Server is listening on port ${PORT}`)

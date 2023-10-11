@@ -5,7 +5,10 @@ const disconnectHandler = socket=>{
     const activeRooms = serverStore.getActiveRooms()
 
     activeRooms.forEach(room => {
-        const userInRoom = room.participants.some(participant => participant.socketId === socket.id)
+        if (!room.participants) {
+            return;
+        }
+        const userInRoom = room?.participants.some(participant => participant.socketId === socket.id)
         if (userInRoom){
             roomLeaveHandler(socket, {roomId: room.roomId})
         }

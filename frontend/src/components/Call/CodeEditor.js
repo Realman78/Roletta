@@ -16,7 +16,7 @@ const options = [
     { value: 'swift', label: 'Swift' },
   ]
 
-function CodeEditor({ code, changeHandler, fontSize, language }) {
+function CodeEditor({ code, changeHandler, fontSize, language, disabledEditor=false }) {
     const { label } = options.find(opt => opt.value === language)
     const fontSizeForTyping = fontSize
 
@@ -24,19 +24,21 @@ function CodeEditor({ code, changeHandler, fontSize, language }) {
         <Editor
             value={code}
             language={language}
-            placeholder={`This is a shared editor. Please enter ${label} code.`}
+            placeholder={`This is a shared editor. Please enter ${label} code.\nIf you want to execute JS code, press the button in the bottom right corner. The results (put the results in console.log) will be at the end of this code editor.`}
             onChange={changeHandler}
             padding={15}
+            disabled={disabledEditor}
             style={{
                 width: '100%',
-                // height: '99%',
+                height: '100%',
                 borderRadius: '8px',
                 fontSize: fontSizeForTyping+'px',
                 backgroundColor: "#151515",
                 fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
 
             }}
-        />
+        >
+        </Editor>
     );
 }
 

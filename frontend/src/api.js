@@ -46,3 +46,14 @@ export const addScheduledRoom = async (body) => {
         }
     }
 }
+
+export const executeCode = async (body) => {
+    try {
+        return await apiClient.post('/api/execution', body, {timeout: 30_000})
+    } catch (exception) {
+        return {
+            error: true,
+            exception
+        }
+    }
+}
