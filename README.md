@@ -1,16 +1,16 @@
 
 # Roletta
 
-Roletta is a web app that makes interviews/meetings fast, accessible and easy for all parties.
+Roletta is a web app that makes interviews/meetings fast, accessible, and easy for all parties.
 
 
 ## Features
 
 - Video/Audio chat
 
-- Easy Interview/Meeting scheduling
+- Easy Interview/Meeting Scheduling
 
-- Shared Code editor with syntax highlight support for 11 languages and changeable font size
+- Shared Code editor with changeable font size
 
 - Ability to execute JS code in the editor in an isolated environment
 
@@ -27,10 +27,10 @@ Roletta is a web app that makes interviews/meetings fast, accessible and easy fo
 #### Scheduled Rooms
 ![Scheduled Rooms](https://cdn.discordapp.com/attachments/769282603651956749/998635773765091378/roletta1.PNG?width=1361&height=670)
 
-#### Video Chat and screensharing active
+#### Video Chat and screen sharing active
 ![Video Chat and screensharing active](https://cdn.discordapp.com/attachments/769282603651956749/998635774314557541/roletta3.PNG?width=1295&height=670)
 
-#### Camera turned off, chat, editor and screensharing active
+#### Camera turned off, chat, editor, and screen sharing active
 ![Main Screen](https://cdn.discordapp.com/attachments/769282603651956749/998635774704619531/roletta4.PNG?width=1366&height=670)
 
 
