@@ -1,6 +1,6 @@
 
 # Roletta
-Try it out! https://marindedic.ddns.net/
+Try it out! https://marindedic.ddns.net/ (not available anymore, hosting is expensive!)
 
 Roletta is a web app that makes interviews/meetings fast, accessible, and easy for all parties.
 
